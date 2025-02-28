@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container do login */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Logo */
+.login-container img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+/* Título */
+h1 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: 0.3s;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+/* Botão */
+.button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #ff7b00;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #ff9900;
+}
+
+/* Icone do olho (para exibir senha) */
+.password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-container input {
+  padding-right: 40px;
+}
+
+.password-container .eye-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%;
+  }
+}

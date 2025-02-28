@@ -1,0 +1,133 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo da página */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Container principal */
+  .aluno-container-alunos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f4f7fa;
+  }
+  
+  .header-alunos {
+    width: 100%;
+    max-width: 1100px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .logo-alunos {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .saudacao-alunos {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .saudacao-alunos strong {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .titulo-alunos {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .button-alunos {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+  }
+  
+  .button-alunos:hover {
+    background-color: #0056b3;
+  }
+  /* Lista de alunos */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  li {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 16px;
+    transition: transform 0.3s;
+  }
+  
+  li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  li b {
+    color: #007bff;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s;
+  }
+  
+  button:hover {
+    color: #007bff;
+  }
+  
+  /* Botões de editar e excluir */
+  .editar-aluno,
+  .remover-aluno {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .editar-aluno:hover,
+  .remover-aluno:hover {
+    color: #007bff;
+  }
+  
+  /* Exibição de mensagem caso não haja alunos */
+  p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+  }
+  
