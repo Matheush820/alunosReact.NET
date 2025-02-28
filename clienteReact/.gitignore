@@ -1,4 +1,11 @@
 .vs/
 node_modules/
 dist/
-build/
+build/# Ignorar a pasta .vs
+
+# Ignorar arquivos temporários do Visual Studio
+.vscode/
+# Ignorar arquivos binários e de build
+bin/
+obj/
+
